@@ -1,0 +1,972 @@
+2020-06-18 23:20:14.165 [INFO] [http-nio-8093-exec-3] [com.example.codiii.controllers.DriverController:30] This is an info message
+2020-06-18 23:20:14.165 [WARN] [http-nio-8093-exec-3] [com.example.codiii.controllers.DriverController:31] This is a warn message
+2020-06-18 23:20:14.165 [ERROR] [http-nio-8093-exec-3] [com.example.codiii.controllers.DriverController:32] This is an error message
+2020-06-18 23:20:14.165 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:20:14.165 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.transaction.internal.TransactionImpl:81] begin
+2020-06-18 23:20:14.173 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.query.criteria.internal.CriteriaQueryImpl:303] Rendered criteria query -> select generatedAlias0 from Driver as generatedAlias0
+2020-06-18 23:20:14.173 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.SQL:128] select driver0_.id as id2_1_, driver0_.first_name as first_na3_1_, driver0_.last_name as last_nam4_1_ from worker driver0_ where driver0_.dtype='Driver'
+2020-06-18 23:20:14.173 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.transaction.internal.TransactionImpl:98] committing
+2020-06-18 23:33:40.685 [INFO] [main] [com.example.codiii.DriverControllerTest:55] Starting DriverControllerTest on DESKTOP-8AQ00BR with PID 6596 (started by Tomek in C:\Users\Tomek\Desktop\takie\codiii)
+2020-06-18 23:33:40.685 [INFO] [main] [com.example.codiii.DriverControllerTest:651] No active profile set, falling back to default profiles: default
+2020-06-18 23:33:42.225 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-18 23:33:42.337 [INFO] [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate:187] Finished Spring Data repository scanning in 104ms. Found 2 JPA repository interfaces.
+2020-06-18 23:33:43.274 [INFO] [main] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-18 23:33:43.371 [DEBUG] [task-1] [org.hibernate.jpa.internal.util.LogHelper:102] PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: jdk.internal.loader.ClassLoaders$AppClassLoader@5a07e868
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Users/Tomek/Desktop/takie/codiii/target/test-classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.example.codiii.model.Category
+		com.example.codiii.model.Driver
+		com.example.codiii.model.Worker]
+	Mapping files names []
+	Properties []
+2020-06-18 23:33:43.395 [DEBUG] [task-1] [org.hibernate.integrator.internal.IntegratorServiceImpl:46] Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2020-06-18 23:33:43.395 [DEBUG] [task-1] [org.hibernate.integrator.internal.IntegratorServiceImpl:46] Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2020-06-18 23:33:43.403 [DEBUG] [task-1] [org.hibernate.integrator.internal.IntegratorServiceImpl:46] Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2020-06-18 23:33:43.483 [INFO] [task-1] [org.hibernate.Version:44] HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-06-18 23:33:43.483 [DEBUG] [task-1] [org.hibernate.cfg.Environment:199] HHH000206: hibernate.properties not found
+2020-06-18 23:33:43.755 [DEBUG] [task-1] [org.hibernate.service.spi.ServiceBinding:68] Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2020-06-18 23:33:43.779 [DEBUG] [task-1] [org.hibernate.cache.internal.RegionFactoryInitiator:118] Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2020-06-18 23:33:43.779 [DEBUG] [task-1] [org.hibernate.cache.internal.RegionFactoryInitiator:49] Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2020-06-18 23:33:43.848 [INFO] [task-1] [org.hibernate.annotations.common.Version:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-18 23:33:43.985 [WARN] [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-18 23:33:44.613 [INFO] [main] [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-06-18 23:33:44.701 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration boolean -> org.hibernate.type.BooleanType@29df2f30
+2020-06-18 23:33:44.726 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration boolean -> org.hibernate.type.BooleanType@29df2f30
+2020-06-18 23:33:44.726 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@29df2f30
+2020-06-18 23:33:44.726 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@703e2dba
+2020-06-18 23:33:44.726 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration true_false -> org.hibernate.type.TrueFalseType@3d63e697
+2020-06-18 23:33:44.734 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration yes_no -> org.hibernate.type.YesNoType@30a410b5
+2020-06-18 23:33:44.734 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration byte -> org.hibernate.type.ByteType@6f6b93ed
+2020-06-18 23:33:44.734 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration byte -> org.hibernate.type.ByteType@6f6b93ed
+2020-06-18 23:33:44.734 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6f6b93ed
+2020-06-18 23:33:44.734 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration character -> org.hibernate.type.CharacterType@22892d8f
+2020-06-18 23:33:44.734 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration char -> org.hibernate.type.CharacterType@22892d8f
+2020-06-18 23:33:44.734 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@22892d8f
+2020-06-18 23:33:44.742 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration short -> org.hibernate.type.ShortType@7707b8ef
+2020-06-18 23:33:44.742 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration short -> org.hibernate.type.ShortType@7707b8ef
+2020-06-18 23:33:44.742 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.lang.Short -> org.hibernate.type.ShortType@7707b8ef
+2020-06-18 23:33:44.742 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration integer -> org.hibernate.type.IntegerType@3e62169
+2020-06-18 23:33:44.742 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration int -> org.hibernate.type.IntegerType@3e62169
+2020-06-18 23:33:44.742 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@3e62169
+2020-06-18 23:33:44.750 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration long -> org.hibernate.type.LongType@30674877
+2020-06-18 23:33:44.750 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration long -> org.hibernate.type.LongType@30674877
+2020-06-18 23:33:44.750 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.lang.Long -> org.hibernate.type.LongType@30674877
+2020-06-18 23:33:44.750 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration float -> org.hibernate.type.FloatType@3f2e2ae6
+2020-06-18 23:33:44.750 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration float -> org.hibernate.type.FloatType@3f2e2ae6
+2020-06-18 23:33:44.750 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3f2e2ae6
+2020-06-18 23:33:44.750 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration double -> org.hibernate.type.DoubleType@7a42b0ad
+2020-06-18 23:33:44.750 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration double -> org.hibernate.type.DoubleType@7a42b0ad
+2020-06-18 23:33:44.750 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7a42b0ad
+2020-06-18 23:33:44.750 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3dca26f
+2020-06-18 23:33:44.758 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3dca26f
+2020-06-18 23:33:44.758 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration big_integer -> org.hibernate.type.BigIntegerType@79a20004
+2020-06-18 23:33:44.758 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@79a20004
+2020-06-18 23:33:44.758 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration string -> org.hibernate.type.StringType@13b1158a
+2020-06-18 23:33:44.766 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.lang.String -> org.hibernate.type.StringType@13b1158a
+2020-06-18 23:33:44.766 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration nstring -> org.hibernate.type.StringNVarcharType@5ac4e122
+2020-06-18 23:33:44.766 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@36403335
+2020-06-18 23:33:44.766 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration url -> org.hibernate.type.UrlType@5cab86bb
+2020-06-18 23:33:44.766 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.net.URL -> org.hibernate.type.UrlType@5cab86bb
+2020-06-18 23:33:44.766 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration Duration -> org.hibernate.type.DurationType@2d29db27
+2020-06-18 23:33:44.766 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.time.Duration -> org.hibernate.type.DurationType@2d29db27
+2020-06-18 23:33:44.774 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration Instant -> org.hibernate.type.InstantType@2331027b
+2020-06-18 23:33:44.774 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.time.Instant -> org.hibernate.type.InstantType@2331027b
+2020-06-18 23:33:44.774 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@11e2967a
+2020-06-18 23:33:44.774 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@11e2967a
+2020-06-18 23:33:44.774 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration LocalDate -> org.hibernate.type.LocalDateType@717360db
+2020-06-18 23:33:44.774 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@717360db
+2020-06-18 23:33:44.782 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@56dc0b55
+2020-06-18 23:33:44.782 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@56dc0b55
+2020-06-18 23:33:44.782 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2cb0e6ac
+2020-06-18 23:33:44.782 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2cb0e6ac
+2020-06-18 23:33:44.790 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@9823e87
+2020-06-18 23:33:44.790 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@9823e87
+2020-06-18 23:33:44.806 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3eb67731
+2020-06-18 23:33:44.806 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3eb67731
+2020-06-18 23:33:44.806 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration date -> org.hibernate.type.DateType@573bd241
+2020-06-18 23:33:44.806 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.sql.Date -> org.hibernate.type.DateType@573bd241
+2020-06-18 23:33:44.814 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration time -> org.hibernate.type.TimeType@3f1383ad
+2020-06-18 23:33:44.814 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.sql.Time -> org.hibernate.type.TimeType@3f1383ad
+2020-06-18 23:33:44.814 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration timestamp -> org.hibernate.type.TimestampType@7e0d8c3d
+2020-06-18 23:33:44.814 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@7e0d8c3d
+2020-06-18 23:33:44.814 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.util.Date -> org.hibernate.type.TimestampType@7e0d8c3d
+2020-06-18 23:33:44.814 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1900c17b
+2020-06-18 23:33:44.822 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration calendar -> org.hibernate.type.CalendarType@1c367fde
+2020-06-18 23:33:44.822 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1c367fde
+2020-06-18 23:33:44.830 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1c367fde
+2020-06-18 23:33:44.830 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@46f667a8
+2020-06-18 23:33:44.830 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@53b94a97
+2020-06-18 23:33:44.830 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration locale -> org.hibernate.type.LocaleType@4ab2133d
+2020-06-18 23:33:44.830 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4ab2133d
+2020-06-18 23:33:44.838 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration currency -> org.hibernate.type.CurrencyType@2654c228
+2020-06-18 23:33:44.838 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2654c228
+2020-06-18 23:33:44.838 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration timezone -> org.hibernate.type.TimeZoneType@2d937a2
+2020-06-18 23:33:44.838 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@2d937a2
+2020-06-18 23:33:44.846 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration class -> org.hibernate.type.ClassType@6e75c268
+2020-06-18 23:33:44.846 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6e75c268
+2020-06-18 23:33:44.850 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@5d1404d4
+2020-06-18 23:33:44.850 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@5d1404d4
+2020-06-18 23:33:44.850 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@40158c2a
+2020-06-18 23:33:44.850 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration binary -> org.hibernate.type.BinaryType@6650f1
+2020-06-18 23:33:44.850 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration byte[] -> org.hibernate.type.BinaryType@6650f1
+2020-06-18 23:33:44.850 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration [B -> org.hibernate.type.BinaryType@6650f1
+2020-06-18 23:33:44.850 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@40dd53ef
+2020-06-18 23:33:44.858 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@40dd53ef
+2020-06-18 23:33:44.858 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@40dd53ef
+2020-06-18 23:33:44.858 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration row_version -> org.hibernate.type.RowVersionType@2cc2d2fd
+2020-06-18 23:33:44.866 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration image -> org.hibernate.type.ImageType@38f7163a
+2020-06-18 23:33:44.866 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration characters -> org.hibernate.type.CharArrayType@56ca0fa3
+2020-06-18 23:33:44.866 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration char[] -> org.hibernate.type.CharArrayType@56ca0fa3
+2020-06-18 23:33:44.866 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration [C -> org.hibernate.type.CharArrayType@56ca0fa3
+2020-06-18 23:33:44.866 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@34e7db8d
+2020-06-18 23:33:44.874 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@34e7db8d
+2020-06-18 23:33:44.874 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@34e7db8d
+2020-06-18 23:33:44.874 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration text -> org.hibernate.type.TextType@2fdd0f30
+2020-06-18 23:33:44.874 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration ntext -> org.hibernate.type.NTextType@42d66d43
+2020-06-18 23:33:44.882 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration blob -> org.hibernate.type.BlobType@63bf7b46
+2020-06-18 23:33:44.882 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@63bf7b46
+2020-06-18 23:33:44.882 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@2140b235
+2020-06-18 23:33:44.882 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration clob -> org.hibernate.type.ClobType@5decbb97
+2020-06-18 23:33:44.882 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@5decbb97
+2020-06-18 23:33:44.890 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration nclob -> org.hibernate.type.NClobType@634e2fa3
+2020-06-18 23:33:44.890 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@634e2fa3
+2020-06-18 23:33:44.890 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@27439ce4
+2020-06-18 23:33:44.890 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@5e66aea0
+2020-06-18 23:33:44.898 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration serializable -> org.hibernate.type.SerializableType@1918fdc2
+2020-06-18 23:33:44.898 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration object -> org.hibernate.type.ObjectType@7d158890
+2020-06-18 23:33:44.906 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7d158890
+2020-06-18 23:33:44.906 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@53b025ad
+2020-06-18 23:33:44.906 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4f3d96ee
+2020-06-18 23:33:44.906 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@56a38583
+2020-06-18 23:33:44.906 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@57f138d0
+2020-06-18 23:33:44.906 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@5bef2ce
+2020-06-18 23:33:44.906 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@26979e71
+2020-06-18 23:33:44.906 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6cd298bd
+2020-06-18 23:33:44.914 [DEBUG] [task-1] [org.hibernate.type.BasicTypeRegistry:157] Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@32bb1a4f
+2020-06-18 23:33:44.946 [DEBUG] [task-1] [org.hibernate.boot.internal.BootstrapContextImpl:262] Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@2a3e655c] into BootstrapContext; was [null]
+2020-06-18 23:33:44.946 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:45] ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@2a3e655c) [was null]
+2020-06-18 23:33:44.946 [DEBUG] [task-1] [org.hibernate.boot.internal.BootstrapContextImpl:272] Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@4daad575] into BootstrapContext; was [null]
+2020-06-18 23:33:44.946 [DEBUG] [task-1] [org.hibernate.boot.internal.BootstrapContextImpl:267] Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@566749e1] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@201eed7]
+2020-06-18 23:33:44.975 [DEBUG] [task-1] [org.hibernate.boot.internal.BootstrapContextImpl:262] Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@2a3e655c]
+2020-06-18 23:33:44.975 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:45] ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@2a3e655c]
+2020-06-18 23:33:44.991 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2020-06-18 23:33:44.991 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2020-06-18 23:33:44.991 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2020-06-18 23:33:44.999 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2020-06-18 23:33:44.999 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2020-06-18 23:33:44.999 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2020-06-18 23:33:44.999 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2020-06-18 23:33:44.999 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-06-18 23:33:45.007 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2020-06-18 23:33:45.007 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2020-06-18 23:33:45.007 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2020-06-18 23:33:45.007 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2020-06-18 23:33:45.007 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-06-18 23:33:45.007 [DEBUG] [task-1] [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory:81] Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2020-06-18 23:33:45.015 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:110] HikariPool-1 - Starting...
+2020-06-18 23:33:45.400 [INFO] [task-1] [com.zaxxer.hikari.HikariDataSource:123] HikariPool-1 - Start completed.
+2020-06-18 23:33:45.408 [DEBUG] [task-1] [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator:72] Database ->
+       name : MySQL
+    version : 5.5.5-10.4.11-MariaDB
+      major : 5
+      minor : 5
+2020-06-18 23:33:45.408 [DEBUG] [task-1] [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator:83] Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.20 (Revision: afc0a13cd3c5a0bf57eaa809ee0ee6df1fd5ac9b)
+      major : 8
+      minor : 0
+2020-06-18 23:33:45.408 [DEBUG] [task-1] [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator:389] JDBC version : 4.2
+2020-06-18 23:33:45.480 [INFO] [task-1] [org.hibernate.dialect.Dialect:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-06-18 23:33:45.505 [DEBUG] [task-1] [org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder:113] JDBC driver metadata reported database stores quoted identifiers in more than one case
+2020-06-18 23:33:45.513 [DEBUG] [task-1] [org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder:187] IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2020-06-18 23:33:45.641 [DEBUG] [task-1] [org.hibernate.boot.model.relational.Namespace:51] Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2020-06-18 23:33:45.649 [DEBUG] [task-1] [org.hibernate.type.spi.TypeConfiguration$Scope:152] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@e9d11b1] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@5a386]
+2020-06-18 23:33:45.737 [DEBUG] [task-1] [org.hibernate.cfg.AnnotationBinder:557] Binding entity from annotated class: com.example.codiii.model.Category
+2020-06-18 23:33:45.777 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-06-18 23:33:45.785 [DEBUG] [task-1] [org.hibernate.cfg.annotations.EntityBinder:430] Import with entity name Category
+2020-06-18 23:33:45.793 [DEBUG] [task-1] [org.hibernate.cfg.annotations.EntityBinder:873] Bind entity com.example.codiii.model.Category on table categories
+2020-06-18 23:33:45.865 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(categories), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2020-06-18 23:33:45.873 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:175] MetadataSourceProcessor property id with lazy=false
+2020-06-18 23:33:45.873 [DEBUG] [task-1] [org.hibernate.cfg.AbstractPropertyHolder:94] Attempting to locate auto-apply AttributeConverter for property [com.example.codiii.model.Category:id]
+2020-06-18 23:33:45.881 [DEBUG] [task-1] [org.hibernate.cfg.annotations.SimpleValueBinder:411] building SimpleValue for id
+2020-06-18 23:33:45.889 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:266] Building property id
+2020-06-18 23:33:45.889 [DEBUG] [task-1] [org.hibernate.cfg.BinderHelper:644] #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2020-06-18 23:33:45.897 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3JoinColumn{logicalColumnName='driver_id', referencedColumn='', mappedBy=''}
+2020-06-18 23:33:45.897 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(categories), mappingColumn=driver, insertable=true, updatable=true, unique=false}
+2020-06-18 23:33:45.905 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:266] Building property driver
+2020-06-18 23:33:45.905 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(categories), mappingColumn=text, insertable=true, updatable=true, unique=false}
+2020-06-18 23:33:45.905 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:175] MetadataSourceProcessor property text with lazy=false
+2020-06-18 23:33:45.905 [DEBUG] [task-1] [org.hibernate.cfg.AbstractPropertyHolder:94] Attempting to locate auto-apply AttributeConverter for property [com.example.codiii.model.Category:text]
+2020-06-18 23:33:45.905 [DEBUG] [task-1] [org.hibernate.cfg.annotations.SimpleValueBinder:411] building SimpleValue for text
+2020-06-18 23:33:45.913 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:266] Building property text
+2020-06-18 23:33:45.921 [DEBUG] [task-1] [org.hibernate.cfg.AnnotationBinder:557] Binding entity from annotated class: com.example.codiii.model.Worker
+2020-06-18 23:33:45.921 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-06-18 23:33:45.921 [DEBUG] [task-1] [org.hibernate.cfg.annotations.EntityBinder:430] Import with entity name Worker
+2020-06-18 23:33:45.921 [DEBUG] [task-1] [org.hibernate.cfg.annotations.EntityBinder:873] Bind entity com.example.codiii.model.Worker on table worker
+2020-06-18 23:33:45.921 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(worker), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2020-06-18 23:33:45.921 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:175] MetadataSourceProcessor property id with lazy=false
+2020-06-18 23:33:45.921 [DEBUG] [task-1] [org.hibernate.cfg.AbstractPropertyHolder:94] Attempting to locate auto-apply AttributeConverter for property [com.example.codiii.model.Worker:id]
+2020-06-18 23:33:45.921 [DEBUG] [task-1] [org.hibernate.cfg.annotations.SimpleValueBinder:411] building SimpleValue for id
+2020-06-18 23:33:45.921 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:266] Building property id
+2020-06-18 23:33:45.921 [DEBUG] [task-1] [org.hibernate.cfg.BinderHelper:644] #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2020-06-18 23:33:45.929 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(worker), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+2020-06-18 23:33:45.929 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:175] MetadataSourceProcessor property firstName with lazy=false
+2020-06-18 23:33:45.929 [DEBUG] [task-1] [org.hibernate.cfg.AbstractPropertyHolder:94] Attempting to locate auto-apply AttributeConverter for property [com.example.codiii.model.Worker:firstName]
+2020-06-18 23:33:45.929 [DEBUG] [task-1] [org.hibernate.cfg.annotations.SimpleValueBinder:411] building SimpleValue for firstName
+2020-06-18 23:33:45.937 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:266] Building property firstName
+2020-06-18 23:33:45.937 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(worker), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+2020-06-18 23:33:45.937 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:175] MetadataSourceProcessor property lastName with lazy=false
+2020-06-18 23:33:45.937 [DEBUG] [task-1] [org.hibernate.cfg.AbstractPropertyHolder:94] Attempting to locate auto-apply AttributeConverter for property [com.example.codiii.model.Worker:lastName]
+2020-06-18 23:33:45.937 [DEBUG] [task-1] [org.hibernate.cfg.annotations.SimpleValueBinder:411] building SimpleValue for lastName
+2020-06-18 23:33:45.937 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:266] Building property lastName
+2020-06-18 23:33:45.937 [DEBUG] [task-1] [org.hibernate.cfg.AnnotationBinder:557] Binding entity from annotated class: com.example.codiii.model.Driver
+2020-06-18 23:33:45.937 [DEBUG] [task-1] [org.hibernate.cfg.annotations.EntityBinder:430] Import with entity name Driver
+2020-06-18 23:33:45.945 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='driver'}
+2020-06-18 23:33:45.945 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(worker), mappingColumn=categories, insertable=true, updatable=true, unique=false}
+2020-06-18 23:33:45.953 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(worker), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2020-06-18 23:33:45.961 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(worker), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2020-06-18 23:33:45.961 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(worker), mappingColumn=categories_key, insertable=true, updatable=true, unique=false}
+2020-06-18 23:33:45.969 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3JoinColumn{logicalColumnName='categories_KEY', referencedColumn='null', mappedBy='null'}
+2020-06-18 23:33:45.969 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='driver'}
+2020-06-18 23:33:45.969 [DEBUG] [task-1] [org.hibernate.cfg.Ejb3Column:213] Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='driver'}
+2020-06-18 23:33:45.969 [DEBUG] [task-1] [org.hibernate.cfg.annotations.CollectionBinder:450] Collection role: com.example.codiii.model.Driver.categories
+2020-06-18 23:33:45.969 [DEBUG] [task-1] [org.hibernate.cfg.annotations.PropertyBinder:266] Building property categories
+2020-06-18 23:33:45.977 [DEBUG] [task-1] [org.hibernate.cfg.annotations.SimpleValueBinder:456] Starting fillSimpleValue for id
+2020-06-18 23:33:45.977 [DEBUG] [task-1] [org.hibernate.cfg.annotations.SimpleValueBinder:456] Starting fillSimpleValue for text
+2020-06-18 23:33:45.977 [DEBUG] [task-1] [org.hibernate.cfg.annotations.SimpleValueBinder:456] Starting fillSimpleValue for id
+2020-06-18 23:33:45.977 [DEBUG] [task-1] [org.hibernate.cfg.annotations.SimpleValueBinder:456] Starting fillSimpleValue for firstName
+2020-06-18 23:33:45.977 [DEBUG] [task-1] [org.hibernate.cfg.annotations.SimpleValueBinder:456] Starting fillSimpleValue for lastName
+2020-06-18 23:33:45.993 [DEBUG] [task-1] [org.hibernate.mapping.PrimaryKey:35] Forcing column [id] to be non-null as it is part of the primary key for table [categories]
+2020-06-18 23:33:45.993 [DEBUG] [task-1] [org.hibernate.mapping.PrimaryKey:35] Forcing column [id] to be non-null as it is part of the primary key for table [worker]
+2020-06-18 23:33:45.993 [DEBUG] [task-1] [org.hibernate.cfg.CollectionSecondPass:50] Second pass for collection: com.example.codiii.model.Driver.categories
+2020-06-18 23:33:45.993 [DEBUG] [task-1] [org.hibernate.cfg.annotations.CollectionBinder:899] Binding a OneToMany: com.example.codiii.model.Driver.categories through a foreign key
+2020-06-18 23:33:45.993 [DEBUG] [task-1] [org.hibernate.cfg.annotations.CollectionBinder:937] Mapping collection: com.example.codiii.model.Driver.categories -> categories
+2020-06-18 23:33:45.993 [DEBUG] [task-1] [org.hibernate.cfg.annotations.TableBinder:554] Retrieving property com.example.codiii.model.Category.driver
+2020-06-18 23:33:45.993 [DEBUG] [task-1] [org.hibernate.cfg.CollectionSecondPass:67] Mapped collection key: driver_id, one-to-many: com.example.codiii.model.Category
+2020-06-18 23:33:45.993 [DEBUG] [task-1] [org.hibernate.boot.internal.InFlightMetadataCollectorImpl:1869] Resolving reference to class: com.example.codiii.model.Driver
+2020-06-18 23:33:46.001 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:160] Context refreshed
+2020-06-18 23:33:46.001 [DEBUG] [task-1] [org.hibernate.boot.internal.InFlightMetadataCollectorImpl:1869] Resolving reference to class: com.example.codiii.model.Driver
+2020-06-18 23:33:46.041 [INFO] [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper:163] Found 1 custom documentation plugin(s)
+2020-06-18 23:33:46.041 [DEBUG] [task-1] [org.hibernate.internal.SessionFactoryImpl:203] Building session factory
+2020-06-18 23:33:46.049 [DEBUG] [task-1] [org.hibernate.cfg.Settings:68] SessionFactory name : null
+2020-06-18 23:33:46.049 [DEBUG] [task-1] [org.hibernate.cfg.Settings:69] Automatic flush during beforeCompletion(): enabled
+2020-06-18 23:33:46.049 [DEBUG] [task-1] [org.hibernate.cfg.Settings:70] Automatic session close at end of transaction: disabled
+2020-06-18 23:33:46.049 [DEBUG] [task-1] [org.hibernate.cfg.Settings:72] Statistics: disabled
+2020-06-18 23:33:46.057 [DEBUG] [task-1] [org.hibernate.cfg.Settings:74] Deleted entity synthetic identifier rollback: disabled
+2020-06-18 23:33:46.057 [DEBUG] [task-1] [org.hibernate.cfg.Settings:75] Default entity-mode: pojo
+2020-06-18 23:33:46.057 [DEBUG] [task-1] [org.hibernate.cfg.Settings:76] Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2020-06-18 23:33:46.057 [DEBUG] [task-1] [org.hibernate.cfg.Settings:77] Allow initialization of lazy state outside session : disabled
+2020-06-18 23:33:46.057 [DEBUG] [task-1] [org.hibernate.cfg.Settings:79] Using BatchFetchStyle : LEGACY
+2020-06-18 23:33:46.057 [DEBUG] [task-1] [org.hibernate.cfg.Settings:80] Default batch fetch size: -1
+2020-06-18 23:33:46.057 [DEBUG] [task-1] [org.hibernate.cfg.Settings:81] Maximum outer join fetch depth: 2
+2020-06-18 23:33:46.057 [DEBUG] [task-1] [org.hibernate.cfg.Settings:82] Default null ordering: NONE
+2020-06-18 23:33:46.057 [DEBUG] [task-1] [org.hibernate.cfg.Settings:83] Order SQL updates by primary key: disabled
+2020-06-18 23:33:46.065 [DEBUG] [task-1] [org.hibernate.cfg.Settings:84] Order SQL inserts for batching: disabled
+2020-06-18 23:33:46.065 [DEBUG] [task-1] [org.hibernate.cfg.Settings:86] multi-tenancy strategy : NONE
+2020-06-18 23:33:46.065 [DEBUG] [task-1] [org.hibernate.cfg.Settings:88] JTA Track by Thread: enabled
+2020-06-18 23:33:46.065 [DEBUG] [task-1] [org.hibernate.cfg.Settings:90] Query language substitutions: {}
+2020-06-18 23:33:46.065 [DEBUG] [task-1] [org.hibernate.cfg.Settings:91] Named query checking : enabled
+2020-06-18 23:33:46.065 [DEBUG] [task-1] [org.hibernate.cfg.Settings:93] Second-level cache: disabled
+2020-06-18 23:33:46.065 [DEBUG] [task-1] [org.hibernate.cfg.Settings:94] Second-level query cache: disabled
+2020-06-18 23:33:46.073 [DEBUG] [task-1] [org.hibernate.cfg.Settings:95] Second-level query cache factory: null
+2020-06-18 23:33:46.073 [DEBUG] [task-1] [org.hibernate.cfg.Settings:96] Second-level cache region prefix: null
+2020-06-18 23:33:46.073 [DEBUG] [task-1] [org.hibernate.cfg.Settings:97] Optimize second-level cache for minimal puts: disabled
+2020-06-18 23:33:46.073 [DEBUG] [task-1] [org.hibernate.cfg.Settings:98] Structured second-level cache entries: disabled
+2020-06-18 23:33:46.073 [DEBUG] [task-1] [org.hibernate.cfg.Settings:99] Second-level cache direct-reference entries: disabled
+2020-06-18 23:33:46.073 [DEBUG] [task-1] [org.hibernate.cfg.Settings:100] Automatic eviction of collection cache: disabled
+2020-06-18 23:33:46.073 [DEBUG] [task-1] [org.hibernate.cfg.Settings:102] JDBC batch size: 15
+2020-06-18 23:33:46.073 [DEBUG] [task-1] [org.hibernate.cfg.Settings:103] JDBC batch updates for versioned data: enabled
+2020-06-18 23:33:46.073 [DEBUG] [task-1] [org.hibernate.cfg.Settings:104] Scrollable result sets: enabled
+2020-06-18 23:33:46.081 [DEBUG] [task-1] [org.hibernate.cfg.Settings:105] Wrap result sets: disabled
+2020-06-18 23:33:46.081 [DEBUG] [task-1] [org.hibernate.cfg.Settings:106] JDBC3 getGeneratedKeys(): enabled
+2020-06-18 23:33:46.081 [DEBUG] [task-1] [org.hibernate.cfg.Settings:107] JDBC result set fetch size: null
+2020-06-18 23:33:46.081 [DEBUG] [task-1] [org.hibernate.cfg.Settings:108] Connection release mode: ON_CLOSE
+2020-06-18 23:33:46.081 [DEBUG] [task-1] [org.hibernate.cfg.Settings:109] Generate SQL with comments: disabled
+2020-06-18 23:33:46.081 [DEBUG] [task-1] [org.hibernate.cfg.Settings:111] JPA compliance - query : disabled
+2020-06-18 23:33:46.081 [DEBUG] [task-1] [org.hibernate.cfg.Settings:112] JPA compliance - closed-handling : disabled
+2020-06-18 23:33:46.081 [DEBUG] [task-1] [org.hibernate.cfg.Settings:113] JPA compliance - lists : disabled
+2020-06-18 23:33:46.081 [DEBUG] [task-1] [org.hibernate.cfg.Settings:114] JPA compliance - transactions : disabled
+2020-06-18 23:33:46.137 [INFO] [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner:41] Scanning for api listing references
+2020-06-18 23:33:46.209 [DEBUG] [task-1] [org.hibernate.internal.SessionFactoryImpl:258] Session factory constructed with filter configurations : {}
+2020-06-18 23:33:46.217 [DEBUG] [task-1] [org.hibernate.internal.SessionFactoryImpl:259] Instantiating session factory with properties: {hibernate.id.new_generator_mappings=true, java.specification.version=13, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@314b8b67, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=Cp1250, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1\plugins\junit\lib\junit5-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1\plugins\junit\lib\junit-rt.jar;C:\Users\Tomek\Desktop\takie\codiii\target\test-classes;C:\Users\Tomek\Desktop\takie\codiii\target\classes;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.3.1.RELEASE\spring-boot-starter-data-jpa-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.3.1.RELEASE\spring-boot-starter-aop-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-aop\5.2.7.RELEASE\spring-aop-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\aspectj\aspectjweaver\1.9.5\aspectjweaver-1.9.5.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.3.1.RELEASE\spring-boot-starter-jdbc-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\com\zaxxer\HikariCP\3.4.5\HikariCP-3.4.5.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-jdbc\5.2.7.RELEASE\spring-jdbc-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\Tomek\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\Tomek\.m2\repository\org\hibernate\hibernate-core\5.4.17.Final\hibernate-core-5.4.17.Final.jar;C:\Users\Tomek\.m2\repository\org\jboss\logging\jboss-logging\3.4.1.Final\jboss-logging-3.4.1.Final.jar;C:\Users\Tomek\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\Tomek\.m2\repository\net\bytebuddy\byte-buddy\1.10.11\byte-buddy-1.10.11.jar;C:\Users\Tomek\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Tomek\.m2\repository\org\jboss\jandex\2.1.3.Final\jandex-2.1.3.Final.jar;C:\Users\Tomek\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\Tomek\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\Tomek\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.3\jaxb-runtime-2.3.3.jar;C:\Users\Tomek\.m2\repository\org\glassfish\jaxb\txw2\2.3.3\txw2-2.3.3.jar;C:\Users\Tomek\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.11\istack-commons-runtime-3.0.11.jar;C:\Users\Tomek\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Tomek\.m2\repository\org\springframework\data\spring-data-jpa\2.3.1.RELEASE\spring-data-jpa-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\data\spring-data-commons\2.3.1.RELEASE\spring-data-commons-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-orm\5.2.7.RELEASE\spring-orm-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-context\5.2.7.RELEASE\spring-context-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-tx\5.2.7.RELEASE\spring-tx-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-beans\5.2.7.RELEASE\spring-beans-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-aspects\5.2.7.RELEASE\spring-aspects-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.3.1.RELEASE\spring-boot-starter-web-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-starter\2.3.1.RELEASE\spring-boot-starter-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot\2.3.1.RELEASE\spring-boot-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.3.1.RELEASE\spring-boot-autoconfigure-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.3.1.RELEASE\spring-boot-starter-logging-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Tomek\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Tomek\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.13.3\log4j-to-slf4j-2.13.3.jar;C:\Users\Tomek\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.3\log4j-api-2.13.3.jar;C:\Users\Tomek\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\Tomek\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Tomek\.m2\repository\org\yaml\snakeyaml\1.26\snakeyaml-1.26.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.3.1.RELEASE\spring-boot-starter-json-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.0\jackson-databind-2.11.0.jar;C:\Users\Tomek\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.0\jackson-core-2.11.0.jar;C:\Users\Tomek\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.11.0\jackson-datatype-jdk8-2.11.0.jar;C:\Users\Tomek\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.11.0\jackson-datatype-jsr310-2.11.0.jar;C:\Users\Tomek\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.11.0\jackson-module-parameter-names-2.11.0.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.3.1.RELEASE\spring-boot-starter-tomcat-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.36\tomcat-embed-core-9.0.36.jar;C:\Users\Tomek\.m2\repository\org\glassfish\jakarta.el\3.0.3\jakarta.el-3.0.3.jar;C:\Users\Tomek\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.36\tomcat-embed-websocket-9.0.36.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-web\5.2.7.RELEASE\spring-web-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-webmvc\5.2.7.RELEASE\spring-webmvc-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-expression\5.2.7.RELEASE\spring-expression-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\Tomek\.m2\repository\io\springfox\springfox-swagger2\2.9.2\springfox-swagger2-2.9.2.jar;C:\Users\Tomek\.m2\repository\io\swagger\swagger-annotations\1.5.20\swagger-annotations-1.5.20.jar;C:\Users\Tomek\.m2\repository\io\swagger\swagger-models\1.5.20\swagger-models-1.5.20.jar;C:\Users\Tomek\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.0\jackson-annotations-2.11.0.jar;C:\Users\Tomek\.m2\repository\io\springfox\springfox-spi\2.9.2\springfox-spi-2.9.2.jar;C:\Users\Tomek\.m2\repository\io\springfox\springfox-core\2.9.2\springfox-core-2.9.2.jar;C:\Users\Tomek\.m2\repository\io\springfox\springfox-schema\2.9.2\springfox-schema-2.9.2.jar;C:\Users\Tomek\.m2\repository\io\springfox\springfox-swagger-common\2.9.2\springfox-swagger-common-2.9.2.jar;C:\Users\Tomek\.m2\repository\io\springfox\springfox-spring-web\2.9.2\springfox-spring-web-2.9.2.jar;C:\Users\Tomek\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\Tomek\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Tomek\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Tomek\.m2\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\mapstruct\mapstruct\1.2.0.Final\mapstruct-1.2.0.Final.jar;C:\Users\Tomek\.m2\repository\io\springfox\springfox-swagger-ui\2.9.2\springfox-swagger-ui-2.9.2.jar;C:\Users\Tomek\.m2\repository\mysql\mysql-connector-java\8.0.20\mysql-connector-java-8.0.20.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.3.1.RELEASE\spring-boot-starter-test-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-test\2.3.1.RELEASE\spring-boot-test-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.3.1.RELEASE\spring-boot-test-autoconfigure-2.3.1.RELEASE.jar;C:\Users\Tomek\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\Tomek\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\Tomek\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\Tomek\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\Tomek\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Tomek\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Tomek\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Tomek\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.2\junit-jupiter-5.6.2.jar;C:\Users\Tomek\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\Tomek\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Tomek\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Tomek\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\Tomek\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.2\junit-jupiter-params-5.6.2.jar;C:\Users\Tomek\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\Tomek\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;C:\Users\Tomek\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\Tomek\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.11\byte-buddy-agent-1.10.11.jar;C:\Users\Tomek\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\Tomek\.m2\repository\org\mockito\mockito-junit-jupiter\3.3.3\mockito-junit-jupiter-3.3.3.jar;C:\Users\Tomek\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Tomek\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-core\5.2.7.RELEASE\spring-core-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-jcl\5.2.7.RELEASE\spring-jcl-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\springframework\spring-test\5.2.7.RELEASE\spring-test-5.2.7.RELEASE.jar;C:\Users\Tomek\.m2\repository\org\xmlunit\xmlunit-core\2.7.0\xmlunit-core-2.7.0.jar;C:\Users\Tomek\.m2\repository\org\assertj\assertj-core\3.16.1\assertj-core-3.16.1.jar;C:\Users\Tomek\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\Tomek\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Warsaw, java.vm.specification.version=13, os.name=Windows 10, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=PL, sun.boot.library.path=C:\Program Files\Java\jdk-13.0.2\bin, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit4 com.example.codiii.DriverControllerTest,shouldThatDriverLastNameHaveTheSameLastNameInDB, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@300f05ea, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\Tomek, user.language=pl, java.specification.vendor=Oracle Corporation, java.version.date=2020-01-14, java.home=C:\Program Files\Java\jdk-13.0.2, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.headless=true, hibernate.hbm2ddl.auto=create, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=13.0.2+8, user.name=Tomek, path.separator=;, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\Tomek\AppData\Local\Temp\, java.version=13.0.2, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=C:\Users\Tomek\Desktop\takie\codiii, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=6596, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@3ef2e8d1, java.library.path=C:\Program Files\Java\jdk-13.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\Users\Tomek\AppData\Local\Microsoft\WindowsApps;C:\Users\Tomek\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Tomek\AppData\Roaming\npm;C:\Program Files\heroku\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=13.0.2+8, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), java.class.version=57.0}
+2020-06-18 23:33:46.233 [DEBUG] [task-1] [org.hibernate.cfg.beanvalidation.TypeSafeActivator:94] Unable to acquire Bean Validation ValidatorFactory, skipping activation
+2020-06-18 23:33:46.233 [DEBUG] [task-1] [org.hibernate.secure.spi.JaccIntegrator:80] Skipping JACC integration as it was not enabled
+2020-06-18 23:33:46.233 [DEBUG] [task-1] [org.hibernate.internal.SessionFactoryImpl:298] Instantiated session factory
+2020-06-18 23:33:46.233 [DEBUG] [task-1] [org.hibernate.type.spi.TypeConfiguration$Scope:157] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@e9d11b1] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@71a0a226]
+2020-06-18 23:33:46.337 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:60] Not known whether passed class name [com.example.codiii.model.Worker] is safe
+2020-06-18 23:33:46.337 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:62] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.codiii.model.Worker
+2020-06-18 23:33:46.369 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:60] Not known whether passed class name [com.example.codiii.model.Worker] is safe
+2020-06-18 23:33:46.377 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:62] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.codiii.model.Worker
+2020-06-18 23:33:46.377 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:60] Not known whether passed class name [com.example.codiii.model.Driver] is safe
+2020-06-18 23:33:46.385 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:62] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.codiii.model.Driver
+2020-06-18 23:33:46.393 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:60] Not known whether passed class name [com.example.codiii.model.Driver] is safe
+2020-06-18 23:33:46.393 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:62] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.codiii.model.Driver
+2020-06-18 23:33:46.617 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:49] Triggering deferred initialization of Spring Data repositories…
+2020-06-18 23:33:46.866 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:60] Not known whether passed class name [com.example.codiii.model.Category] is safe
+2020-06-18 23:33:46.866 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:62] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.codiii.model.Category
+2020-06-18 23:33:46.866 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:60] Not known whether passed class name [com.example.codiii.model.Category] is safe
+2020-06-18 23:33:46.866 [DEBUG] [task-1] [org.hibernate.boot.internal.ClassLoaderAccessImpl:62] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.codiii.model.Category
+2020-06-18 23:33:46.916 [DEBUG] [task-1] [org.hibernate.persister.collection.AbstractCollectionPersister:692] Static SQL for collection: com.example.codiii.model.Driver.categories
+2020-06-18 23:33:46.916 [DEBUG] [task-1] [org.hibernate.persister.collection.AbstractCollectionPersister:694]  Row insert: update categories set driver_id=? where id=?
+2020-06-18 23:33:46.916 [DEBUG] [task-1] [org.hibernate.persister.collection.AbstractCollectionPersister:697]  Row update: update categories set  where id=?
+2020-06-18 23:33:46.916 [DEBUG] [task-1] [org.hibernate.persister.collection.AbstractCollectionPersister:700]  Row delete: update categories set driver_id=null where driver_id=? and id=?
+2020-06-18 23:33:46.916 [DEBUG] [task-1] [org.hibernate.persister.collection.AbstractCollectionPersister:703]  One-shot delete: update categories set driver_id=null where driver_id=?
+2020-06-18 23:33:46.924 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3874] Static SQL for entity: com.example.codiii.model.Worker
+2020-06-18 23:33:46.924 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3879]  Version select: select id from worker where id =?
+2020-06-18 23:33:46.924 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3882]  Snapshot select: select worker_.id, worker_.first_name as first_na3_1_, worker_.last_name as last_nam4_1_ from worker worker_ where worker_.id=?
+2020-06-18 23:33:46.924 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:394]  Insert 0: insert into worker (first_name, last_name, dtype, id) values (?, ?, 'Worker', ?)
+2020-06-18 23:33:46.924 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:394]  Update 0: update worker set first_name=?, last_name=? where id=?
+2020-06-18 23:33:46.924 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:394]  Delete 0: delete from worker where id=?
+2020-06-18 23:33:46.924 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3890]  Identity insert: insert into worker (first_name, last_name, dtype) values (?, ?, 'Worker')
+2020-06-18 23:33:46.964 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@109ecbe7]
+2020-06-18 23:33:46.972 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : firstName
+2020-06-18 23:33:46.972 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : lastName
+2020-06-18 23:33:46.972 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : categories
+2020-06-18 23:33:46.980 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6e2d8b9]
+2020-06-18 23:33:46.980 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@71e1b7c0]
+2020-06-18 23:33:46.980 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150] Building LoadPlan...
+2020-06-18 23:33:46.997 [DEBUG] [task-1] [org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor:102] processing queryspace <gen:0>
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter:55] LoadPlan(entity=com.example.codiii.model.Worker)
+    - Returns
+       - EntityReturnImpl(entity=com.example.codiii.model.Worker, querySpaceUid=<gen:0>, path=com.example.codiii.model.Worker)
+          - CollectionAttributeFetchImpl(collection=com.example.codiii.model.Driver.categories, querySpaceUid=<gen:1>, path=com.example.codiii.model.Worker.categories)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.codiii.model.Category, querySpaceUid=<gen:2>, path=com.example.codiii.model.Worker.categories.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.codiii.model.Worker)
+          - SQL table alias mapping - worker0_
+          - alias suffix - 0_
+          - suffixed key columns - {id2_1_0_}
+
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.loader.entity.plan.EntityLoader:137] Static select for entity com.example.codiii.model.Worker [NONE]: select worker0_.id as id2_1_0_, worker0_.first_name as first_na3_1_0_, worker0_.last_name as last_nam4_1_0_, worker0_.dtype as dtype1_1_0_ from worker worker0_ where worker0_.id=?
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@584c356e]
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : firstName
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : lastName
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : categories
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2094fccc]
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@73f3d075]
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150] Building LoadPlan...
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor:102] processing queryspace <gen:0>
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter:55] LoadPlan(entity=com.example.codiii.model.Worker)
+    - Returns
+       - EntityReturnImpl(entity=com.example.codiii.model.Worker, querySpaceUid=<gen:0>, path=com.example.codiii.model.Worker)
+          - CollectionAttributeFetchImpl(collection=com.example.codiii.model.Driver.categories, querySpaceUid=<gen:1>, path=com.example.codiii.model.Worker.categories)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.codiii.model.Category, querySpaceUid=<gen:2>, path=com.example.codiii.model.Worker.categories.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.codiii.model.Worker)
+          - SQL table alias mapping - worker0_
+          - alias suffix - 0_
+          - suffixed key columns - {id2_1_0_}
+
+2020-06-18 23:33:47.005 [DEBUG] [task-1] [org.hibernate.loader.entity.plan.EntityLoader:137] Static select for entity com.example.codiii.model.Worker [READ]: select worker0_.id as id2_1_0_, worker0_.first_name as first_na3_1_0_, worker0_.last_name as last_nam4_1_0_, worker0_.dtype as dtype1_1_0_ from worker worker0_ where worker0_.id=?
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.loader.Loader:38] Static select for action ACTION_MERGE on entity com.example.codiii.model.Worker: select worker0_.id as id2_1_1_, worker0_.first_name as first_na3_1_1_, worker0_.last_name as last_nam4_1_1_, worker0_.dtype as dtype1_1_1_, categories1_.driver_id as driver_i3_0_3_, categories1_.id as id1_0_3_, categories1_.id as id1_0_0_, categories1_.driver_id as driver_i3_0_0_, categories1_.text as text2_0_0_ from worker worker0_ left outer join categories categories1_ on worker0_.id=categories1_.driver_id where worker0_.id=?
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.loader.Loader:38] Static select for action ACTION_REFRESH on entity com.example.codiii.model.Worker: select worker0_.id as id2_1_1_, worker0_.first_name as first_na3_1_1_, worker0_.last_name as last_nam4_1_1_, worker0_.dtype as dtype1_1_1_, categories1_.driver_id as driver_i3_0_3_, categories1_.id as id1_0_3_, categories1_.id as id1_0_0_, categories1_.driver_id as driver_i3_0_0_, categories1_.text as text2_0_0_ from worker worker0_ left outer join categories categories1_ on worker0_.id=categories1_.driver_id where worker0_.id=?
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3874] Static SQL for entity: com.example.codiii.model.Category
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3879]  Version select: select id from categories where id =?
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3882]  Snapshot select: select category_.id, category_.driver_id as driver_i3_0_, category_.text as text2_0_ from categories category_ where category_.id=?
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:394]  Insert 0: insert into categories (driver_id, text, id) values (?, ?, ?)
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:394]  Update 0: update categories set driver_id=?, text=? where id=?
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:394]  Delete 0: delete from categories where id=?
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3890]  Identity insert: insert into categories (driver_id, text) values (?, ?)
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@143040c]
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : driver
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@763cc9d0]
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : text
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150] Building LoadPlan...
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor:102] processing queryspace <gen:0>
+2020-06-18 23:33:47.029 [DEBUG] [task-1] [org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter:55] LoadPlan(entity=com.example.codiii.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.example.codiii.model.Category, querySpaceUid=<gen:0>, path=com.example.codiii.model.Category)
+          - EntityAttributeFetchImpl(entity=com.example.codiii.model.Driver, querySpaceUid=<gen:1>, path=com.example.codiii.model.Category.driver)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.codiii.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.loader.entity.plan.EntityLoader:137] Static select for entity com.example.codiii.model.Category [NONE]: select category0_.id as id1_0_0_, category0_.driver_id as driver_i3_0_0_, category0_.text as text2_0_0_ from categories category0_ where category0_.id=?
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6667901c]
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : driver
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@17ae4d7a]
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : text
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150] Building LoadPlan...
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor:102] processing queryspace <gen:0>
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter:55] LoadPlan(entity=com.example.codiii.model.Category)
+    - Returns
+       - EntityReturnImpl(entity=com.example.codiii.model.Category, querySpaceUid=<gen:0>, path=com.example.codiii.model.Category)
+          - EntityAttributeFetchImpl(entity=com.example.codiii.model.Driver, querySpaceUid=<gen:1>, path=com.example.codiii.model.Category.driver)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.codiii.model.Category)
+          - SQL table alias mapping - category0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.loader.entity.plan.EntityLoader:137] Static select for entity com.example.codiii.model.Category [READ]: select category0_.id as id1_0_0_, category0_.driver_id as driver_i3_0_0_, category0_.text as text2_0_0_ from categories category0_ where category0_.id=?
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.loader.Loader:38] Static select for action ACTION_MERGE on entity com.example.codiii.model.Category: select category0_.id as id1_0_0_, category0_.driver_id as driver_i3_0_0_, category0_.text as text2_0_0_ from categories category0_ where category0_.id=?
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.loader.Loader:38] Static select for action ACTION_REFRESH on entity com.example.codiii.model.Category: select category0_.id as id1_0_0_, category0_.driver_id as driver_i3_0_0_, category0_.text as text2_0_0_ from categories category0_ where category0_.id=?
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3874] Static SQL for entity: com.example.codiii.model.Driver
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3879]  Version select: select id from worker where id =?
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3882]  Snapshot select: select driver_.id, driver_.first_name as first_na3_1_, driver_.last_name as last_nam4_1_ from worker driver_ where driver_.id=?
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:394]  Insert 0: insert into worker (first_name, last_name, dtype, id) values (?, ?, 'Driver', ?)
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:394]  Update 0: update worker set first_name=?, last_name=? where id=?
+2020-06-18 23:33:47.037 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:394]  Delete 0: delete from worker where id=?
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.persister.entity.AbstractEntityPersister:3890]  Identity insert: insert into worker (first_name, last_name, dtype) values (?, ?, 'Driver')
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1cad3f84]
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : firstName
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : lastName
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : categories
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6dd36cd4]
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@8732989]
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150] Building LoadPlan...
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor:102] processing queryspace <gen:0>
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter:55] LoadPlan(entity=com.example.codiii.model.Driver)
+    - Returns
+       - EntityReturnImpl(entity=com.example.codiii.model.Driver, querySpaceUid=<gen:0>, path=com.example.codiii.model.Driver)
+          - CollectionAttributeFetchImpl(collection=com.example.codiii.model.Driver.categories, querySpaceUid=<gen:1>, path=com.example.codiii.model.Driver.categories)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.codiii.model.Category, querySpaceUid=<gen:2>, path=com.example.codiii.model.Driver.categories.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.codiii.model.Driver)
+          - SQL table alias mapping - driver0_
+          - alias suffix - 0_
+          - suffixed key columns - {id2_1_0_}
+
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.entity.plan.EntityLoader:137] Static select for entity com.example.codiii.model.Driver [NONE]: select driver0_.id as id2_1_0_, driver0_.first_name as first_na3_1_0_, driver0_.last_name as last_nam4_1_0_ from worker driver0_ where driver0_.id=? and driver0_.dtype='Driver'
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7d57761c]
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : firstName
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : lastName
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : categories
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@481c8f4b]
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5932c8a0]
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150] Building LoadPlan...
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor:102] processing queryspace <gen:0>
+2020-06-18 23:33:47.045 [DEBUG] [task-1] [org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter:55] LoadPlan(entity=com.example.codiii.model.Driver)
+    - Returns
+       - EntityReturnImpl(entity=com.example.codiii.model.Driver, querySpaceUid=<gen:0>, path=com.example.codiii.model.Driver)
+          - CollectionAttributeFetchImpl(collection=com.example.codiii.model.Driver.categories, querySpaceUid=<gen:1>, path=com.example.codiii.model.Driver.categories)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.codiii.model.Category, querySpaceUid=<gen:2>, path=com.example.codiii.model.Driver.categories.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.codiii.model.Driver)
+          - SQL table alias mapping - driver0_
+          - alias suffix - 0_
+          - suffixed key columns - {id2_1_0_}
+
+2020-06-18 23:33:47.053 [DEBUG] [task-1] [org.hibernate.loader.entity.plan.EntityLoader:137] Static select for entity com.example.codiii.model.Driver [READ]: select driver0_.id as id2_1_0_, driver0_.first_name as first_na3_1_0_, driver0_.last_name as last_nam4_1_0_ from worker driver0_ where driver0_.id=? and driver0_.dtype='Driver'
+2020-06-18 23:33:47.053 [DEBUG] [task-1] [org.hibernate.loader.Loader:38] Static select for action ACTION_MERGE on entity com.example.codiii.model.Driver: select driver0_.id as id2_1_1_, driver0_.first_name as first_na3_1_1_, driver0_.last_name as last_nam4_1_1_, categories1_.driver_id as driver_i3_0_3_, categories1_.id as id1_0_3_, categories1_.id as id1_0_0_, categories1_.driver_id as driver_i3_0_0_, categories1_.text as text2_0_0_ from worker driver0_ left outer join categories categories1_ on driver0_.id=categories1_.driver_id where driver0_.id=? and driver0_.dtype='Driver'
+2020-06-18 23:33:47.053 [DEBUG] [task-1] [org.hibernate.loader.Loader:38] Static select for action ACTION_REFRESH on entity com.example.codiii.model.Driver: select driver0_.id as id2_1_1_, driver0_.first_name as first_na3_1_1_, driver0_.last_name as last_nam4_1_1_, categories1_.driver_id as driver_i3_0_3_, categories1_.id as id1_0_3_, categories1_.id as id1_0_0_, categories1_.driver_id as driver_i3_0_0_, categories1_.text as text2_0_0_ from worker driver0_ left outer join categories categories1_ on driver0_.id=categories1_.driver_id where driver0_.id=? and driver0_.dtype='Driver'
+2020-06-18 23:33:47.053 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2f57cf43]
+2020-06-18 23:33:47.061 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl:174] Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6d44c8af]
+2020-06-18 23:33:47.061 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : driver
+2020-06-18 23:33:47.061 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:154] Property path deemed to be circular : driver
+2020-06-18 23:33:47.066 [DEBUG] [task-1] [org.hibernate.persister.walking.spi.MetamodelGraphWalker:146] Visiting attribute path : text
+2020-06-18 23:33:47.066 [DEBUG] [task-1] [org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150] Building LoadPlan...
+2020-06-18 23:33:47.083 [DEBUG] [task-1] [org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor:102] processing queryspace <gen:0>
+2020-06-18 23:33:47.083 [DEBUG] [task-1] [org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter:55] LoadPlan(collection=com.example.codiii.model.Driver.categories)
+    - Returns
+       - CollectionReturnImpl(collection=com.example.codiii.model.Driver.categories, querySpaceUid=<gen:0>, path=[com.example.codiii.model.Driver.categories])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.example.codiii.model.Category, querySpaceUid=<gen:1>, path=[com.example.codiii.model.Driver.categories].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.example.codiii.model.Driver.categories)
+          - SQL table alias mapping - categories0_
+          - alias suffix - 0_
+          - suffixed key columns - {driver_i3_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.example.codiii.model.Category)
+                - SQL table alias mapping - categories0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+2020-06-18 23:33:47.083 [DEBUG] [task-1] [org.hibernate.loader.collection.plan.CollectionLoader:83] Static select for collection com.example.codiii.model.Driver.categories: select categories0_.driver_id as driver_i3_0_0_, categories0_.id as id1_0_0_, categories0_.id as id1_0_1_, categories0_.driver_id as driver_i3_0_1_, categories0_.text as text2_0_1_ from categories categories0_ where categories0_.driver_id=?
+2020-06-18 23:33:47.155 [DEBUG] [task-1] [org.hibernate.SQL:128] alter table categories drop foreign key FKt2sgilsieddjbvwwisxh8ok3v
+2020-06-18 23:33:47.184 [DEBUG] [task-1] [org.hibernate.SQL:128] drop table if exists categories
+2020-06-18 23:33:47.192 [DEBUG] [task-1] [org.hibernate.SQL:128] drop table if exists worker
+2020-06-18 23:33:47.200 [DEBUG] [task-1] [org.hibernate.SQL:128] create table categories (id bigint not null auto_increment, text longtext, driver_id bigint, primary key (id)) engine=InnoDB
+2020-06-18 23:33:47.216 [DEBUG] [task-1] [org.hibernate.SQL:128] create table worker (dtype varchar(31) not null, id bigint not null auto_increment, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
+2020-06-18 23:33:47.232 [DEBUG] [task-1] [org.hibernate.SQL:128] alter table categories add constraint FKt2sgilsieddjbvwwisxh8ok3v foreign key (driver_id) references worker (id)
+2020-06-18 23:33:47.272 [INFO] [task-1] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-18 23:33:47.280 [DEBUG] [task-1] [org.hibernate.query.spi.NamedQueryRepository:151] Checking 0 named HQL queries
+2020-06-18 23:33:47.280 [DEBUG] [task-1] [org.hibernate.query.spi.NamedQueryRepository:167] Checking 0 named SQL queries
+2020-06-18 23:33:47.288 [DEBUG] [task-1] [org.hibernate.internal.SessionFactoryRegistry:52] Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@1fe256ac
+2020-06-18 23:33:47.288 [DEBUG] [task-1] [org.hibernate.internal.SessionFactoryRegistry:74] Registering SessionFactory: d7679638-0637-4ea1-9916-57d6f1524b15 (<unnamed>)
+2020-06-18 23:33:47.288 [DEBUG] [task-1] [org.hibernate.internal.SessionFactoryRegistry:81] Not binding SessionFactory to JNDI, no JNDI name configured
+2020-06-18 23:33:47.288 [INFO] [task-1] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 23:33:47.425 [DEBUG] [main] [org.hibernate.stat.internal.StatisticsInitiator:101] Statistics initialized [enabled=false]
+2020-06-18 23:33:47.601 [DEBUG] [main] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:33:47.723 [DEBUG] [main] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:33:47.755 [DEBUG] [main] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:33:47.755 [DEBUG] [main] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:33:47.763 [INFO] [main] [org.springframework.data.repository.config.DeferredRepositoryInitializationListener:53] Spring Data repositories initialized!
+2020-06-18 23:33:47.771 [INFO] [main] [com.example.codiii.DriverControllerTest:61] Started DriverControllerTest in 7.677 seconds (JVM running for 9.474)
+2020-06-18 23:33:48.039 [INFO] [main] [org.springframework.boot.test.mock.web.SpringBootMockServletContext:455] Initializing Spring TestDispatcherServlet ''
+2020-06-18 23:33:48.039 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:525] Initializing Servlet ''
+2020-06-18 23:33:48.063 [INFO] [main] [org.springframework.test.web.servlet.TestDispatcherServlet:547] Completed initialization in 24 ms
+2020-06-18 23:33:48.239 [DEBUG] [main] [org.hibernate.query.criteria.internal.CriteriaQueryImpl:303] Rendered criteria query -> select generatedAlias0 from Driver as generatedAlias0 where generatedAlias0.firstName is null
+2020-06-18 23:33:48.261 [DEBUG] [main] [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator:45] QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7c4a03a
+2020-06-18 23:33:48.293 [DEBUG] [main] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:292] parse() - HQL: select generatedAlias0 from com.example.codiii.model.Driver as generatedAlias0 where generatedAlias0.firstName is null
+2020-06-18 23:33:48.309 [DEBUG] [main] [org.hibernate.hql.internal.ast.ErrorTracker:97] throwQueryException() : no errors
+2020-06-18 23:33:48.317 [DEBUG] [main] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:313] --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[IDENT] Node: 'com'
+    |  |     |  |  |  |  \-[IDENT] Node: 'example'
+    |  |     |  |  |  \-[IDENT] Node: 'codiii'
+    |  |     |  |  \-[IDENT] Node: 'model'
+    |  |     |  \-[IDENT] Node: 'Driver'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[IS_NULL] Node: 'is null'
+          \-[DOT] Node: '.'
+             +-[IDENT] Node: 'generatedAlias0'
+             \-[IDENT] Node: 'firstName'
+
+2020-06-18 23:33:48.349 [DEBUG] [main] [org.hibernate.hql.internal.antlr.HqlSqlBaseWalker:124] select << begin [level=1, statement=select]
+2020-06-18 23:33:48.366 [DEBUG] [main] [org.hibernate.hql.internal.ast.tree.FromElement:153] FromClause{level=1} : com.example.codiii.model.Driver (generatedAlias0) -> driver0_
+2020-06-18 23:33:48.366 [DEBUG] [main] [org.hibernate.hql.internal.ast.tree.FromReferenceNode:60] Resolved : generatedAlias0 -> driver0_.id
+2020-06-18 23:33:48.374 [DEBUG] [main] [org.hibernate.hql.internal.ast.tree.FromReferenceNode:60] Resolved : generatedAlias0 -> driver0_.id
+2020-06-18 23:33:48.374 [DEBUG] [main] [org.hibernate.hql.internal.ast.tree.DotNode:694] getDataType() : firstName -> org.hibernate.type.StringType@13b1158a
+2020-06-18 23:33:48.374 [DEBUG] [main] [org.hibernate.hql.internal.ast.tree.FromReferenceNode:60] Resolved : generatedAlias0.firstName -> driver0_.first_name
+2020-06-18 23:33:48.374 [DEBUG] [main] [org.hibernate.hql.internal.antlr.HqlSqlBaseWalker:128] select : finishing up [level=1, statement=select]
+2020-06-18 23:33:48.374 [DEBUG] [main] [org.hibernate.hql.internal.ast.HqlSqlWalker:760] processQuery() :  ( SELECT ( {select clause} driver0_.id ) ( FromClause{level=1} worker driver0_ ) ( where ( is null ( driver0_.first_name driver0_.id firstName ) ) ) )
+2020-06-18 23:33:48.382 [DEBUG] [main] [org.hibernate.hql.internal.ast.util.JoinProcessor:129] Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Driver): [worker]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(com.example.codiii.model.Driver)
+    |  | originalText: generatedAlias0
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-IsNullLogicOperatorNode
+          \-DotNode
+            persister: SingleTableEntityPersister(com.example.codiii.model.Driver)
+            path: generatedAlias0.firstName
+             +-IdentNode
+             | persister: SingleTableEntityPersister(com.example.codiii.model.Driver)
+             | originalText: generatedAlias0
+             \-IdentNode
+               persister: null
+               originalText: firstName
+
+2020-06-18 23:33:48.390 [DEBUG] [main] [org.hibernate.hql.internal.ast.util.JoinProcessor:296] Using FROM fragment [worker driver0_]
+2020-06-18 23:33:48.390 [DEBUG] [main] [org.hibernate.hql.internal.ast.util.SyntheticAndFactory:73] Using unprocessed WHERE-fragment [driver0_.dtype='Driver']
+2020-06-18 23:33:48.390 [DEBUG] [main] [org.hibernate.hql.internal.ast.util.SyntheticAndFactory:104] Using processed WHERE-fragment [driver0_.dtype='Driver']
+2020-06-18 23:33:48.390 [DEBUG] [main] [org.hibernate.hql.internal.antlr.HqlSqlBaseWalker:132] select >> end [level=1, statement=select]
+2020-06-18 23:33:48.390 [DEBUG] [main] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:279] --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (worker)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'driver0_.id as id2_1_' {alias=generatedAlias0, className=com.example.codiii.model.Driver, tableAlias=driver0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'driver0_.first_name as first_na3_1_, driver0_.last_name as last_nam4_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[driver0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'worker driver0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=worker,tableAlias=driver0_,origin=null,columns={,className=com.example.codiii.model.Driver}}
+    \-[WHERE] SqlNode: 'where'
+       +-[FILTERS] SqlNode: '{filter conditions}'
+       |  \-[SQL_TOKEN] SqlFragment: 'driver0_.dtype='Driver''
+       \-[IS_NULL] IsNullLogicOperatorNode: 'is null'
+          \-[DOT] DotNode: 'driver0_.first_name' {propertyName=firstName,dereferenceType=PRIMITIVE,getPropertyPath=firstName,path=generatedAlias0.firstName,tableAlias=driver0_,className=com.example.codiii.model.Driver,classAlias=generatedAlias0}
+             +-[ALIAS_REF] IdentNode: 'driver0_.id' {alias=generatedAlias0, className=com.example.codiii.model.Driver, tableAlias=driver0_}
+             \-[IDENT] IdentNode: 'firstName' {originalText=firstName}
+
+2020-06-18 23:33:48.390 [DEBUG] [main] [org.hibernate.hql.internal.ast.ErrorTracker:97] throwQueryException() : no errors
+2020-06-18 23:33:48.398 [DEBUG] [main] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:258] HQL: select generatedAlias0 from com.example.codiii.model.Driver as generatedAlias0 where generatedAlias0.firstName is null
+2020-06-18 23:33:48.406 [DEBUG] [main] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:259] SQL: select driver0_.id as id2_1_, driver0_.first_name as first_na3_1_, driver0_.last_name as last_nam4_1_ from worker driver0_ where driver0_.dtype='Driver' and (driver0_.first_name is null)
+2020-06-18 23:33:48.406 [DEBUG] [main] [org.hibernate.hql.internal.ast.ErrorTracker:97] throwQueryException() : no errors
+2020-06-18 23:33:48.430 [DEBUG] [main] [org.hibernate.SQL:128] select driver0_.id as id2_1_, driver0_.first_name as first_na3_1_, driver0_.last_name as last_nam4_1_ from worker driver0_ where driver0_.dtype='Driver' and (driver0_.first_name is null)
+2020-06-18 23:33:48.462 [DEBUG] [main] [org.hibernate.query.criteria.internal.CriteriaQueryImpl:303] Rendered criteria query -> select generatedAlias0 from Driver as generatedAlias0 where generatedAlias0.lastName=:param0
+2020-06-18 23:33:48.462 [DEBUG] [main] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:292] parse() - HQL: select generatedAlias0 from com.example.codiii.model.Driver as generatedAlias0 where generatedAlias0.lastName=:param0
+2020-06-18 23:33:48.462 [DEBUG] [main] [org.hibernate.hql.internal.ast.ErrorTracker:97] throwQueryException() : no errors
+2020-06-18 23:33:48.462 [DEBUG] [main] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:313] --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[IDENT] Node: 'com'
+    |  |     |  |  |  |  \-[IDENT] Node: 'example'
+    |  |     |  |  |  \-[IDENT] Node: 'codiii'
+    |  |     |  |  \-[IDENT] Node: 'model'
+    |  |     |  \-[IDENT] Node: 'Driver'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'lastName'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+2020-06-18 23:33:48.478 [DEBUG] [main] [org.hibernate.hql.internal.antlr.HqlSqlBaseWalker:124] select << begin [level=1, statement=select]
+2020-06-18 23:33:48.478 [DEBUG] [main] [org.hibernate.hql.internal.ast.tree.FromElement:153] FromClause{level=1} : com.example.codiii.model.Driver (generatedAlias0) -> driver0_
+2020-06-18 23:33:48.478 [DEBUG] [main] [org.hibernate.hql.internal.ast.tree.FromReferenceNode:60] Resolved : generatedAlias0 -> driver0_.id
+2020-06-18 23:33:48.478 [DEBUG] [main] [org.hibernate.hql.internal.ast.tree.FromReferenceNode:60] Resolved : generatedAlias0 -> driver0_.id
+2020-06-18 23:33:48.478 [DEBUG] [main] [org.hibernate.hql.internal.ast.tree.DotNode:694] getDataType() : lastName -> org.hibernate.type.StringType@13b1158a
+2020-06-18 23:33:48.478 [DEBUG] [main] [org.hibernate.hql.internal.ast.tree.FromReferenceNode:60] Resolved : generatedAlias0.lastName -> driver0_.last_name
+2020-06-18 23:33:48.486 [DEBUG] [main] [org.hibernate.hql.internal.antlr.HqlSqlBaseWalker:128] select : finishing up [level=1, statement=select]
+2020-06-18 23:33:48.486 [DEBUG] [main] [org.hibernate.hql.internal.ast.HqlSqlWalker:760] processQuery() :  ( SELECT ( {select clause} driver0_.id ) ( FromClause{level=1} worker driver0_ ) ( where ( = ( driver0_.last_name driver0_.id lastName ) ? ) ) )
+2020-06-18 23:33:48.486 [DEBUG] [main] [org.hibernate.hql.internal.ast.util.JoinProcessor:129] Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Driver): [worker]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(com.example.codiii.model.Driver)
+    |  | originalText: generatedAlias0
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-BinaryLogicOperatorNode
+          +-DotNode
+          | persister: SingleTableEntityPersister(com.example.codiii.model.Driver)
+          | path: generatedAlias0.lastName
+          |  +-IdentNode
+          |  | persister: SingleTableEntityPersister(com.example.codiii.model.Driver)
+          |  | originalText: generatedAlias0
+          |  \-IdentNode
+          |    persister: null
+          |    originalText: lastName
+          \-ParameterNode
+
+2020-06-18 23:33:48.486 [DEBUG] [main] [org.hibernate.hql.internal.ast.util.JoinProcessor:296] Using FROM fragment [worker driver0_]
+2020-06-18 23:33:48.486 [DEBUG] [main] [org.hibernate.hql.internal.ast.util.SyntheticAndFactory:73] Using unprocessed WHERE-fragment [driver0_.dtype='Driver']
+2020-06-18 23:33:48.486 [DEBUG] [main] [org.hibernate.hql.internal.ast.util.SyntheticAndFactory:104] Using processed WHERE-fragment [driver0_.dtype='Driver']
+2020-06-18 23:33:48.494 [DEBUG] [main] [org.hibernate.hql.internal.antlr.HqlSqlBaseWalker:132] select >> end [level=1, statement=select]
+2020-06-18 23:33:48.494 [DEBUG] [main] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:279] --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (worker)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'driver0_.id as id2_1_' {alias=generatedAlias0, className=com.example.codiii.model.Driver, tableAlias=driver0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'driver0_.first_name as first_na3_1_, driver0_.last_name as last_nam4_1_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[driver0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'worker driver0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=worker,tableAlias=driver0_,origin=null,columns={,className=com.example.codiii.model.Driver}}
+    \-[WHERE] SqlNode: 'where'
+       +-[FILTERS] SqlNode: '{filter conditions}'
+       |  \-[SQL_TOKEN] SqlFragment: 'driver0_.dtype='Driver''
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'driver0_.last_name' {propertyName=lastName,dereferenceType=PRIMITIVE,getPropertyPath=lastName,path=generatedAlias0.lastName,tableAlias=driver0_,className=com.example.codiii.model.Driver,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'driver0_.id' {alias=generatedAlias0, className=com.example.codiii.model.Driver, tableAlias=driver0_}
+          |  \-[IDENT] IdentNode: 'lastName' {originalText=lastName}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@13b1158a}
+
+2020-06-18 23:33:48.494 [DEBUG] [main] [org.hibernate.hql.internal.ast.ErrorTracker:97] throwQueryException() : no errors
+2020-06-18 23:33:48.494 [DEBUG] [main] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:258] HQL: select generatedAlias0 from com.example.codiii.model.Driver as generatedAlias0 where generatedAlias0.lastName=:param0
+2020-06-18 23:33:48.494 [DEBUG] [main] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:259] SQL: select driver0_.id as id2_1_, driver0_.first_name as first_na3_1_, driver0_.last_name as last_nam4_1_ from worker driver0_ where driver0_.dtype='Driver' and driver0_.last_name=?
+2020-06-18 23:33:48.494 [DEBUG] [main] [org.hibernate.hql.internal.ast.ErrorTracker:97] throwQueryException() : no errors
+2020-06-18 23:33:48.502 [DEBUG] [main] [org.hibernate.SQL:128] select driver0_.id as id2_1_, driver0_.first_name as first_na3_1_, driver0_.last_name as last_nam4_1_ from worker driver0_ where driver0_.dtype='Driver' and driver0_.last_name=?
+2020-06-18 23:33:48.518 [DEBUG] [main] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:33:48.518 [DEBUG] [main] [org.hibernate.engine.transaction.internal.TransactionImpl:81] begin
+2020-06-18 23:33:48.574 [DEBUG] [main] [org.hibernate.engine.spi.ActionQueue:281] Executing identity-insert immediately
+2020-06-18 23:33:48.574 [DEBUG] [main] [org.hibernate.SQL:128] insert into worker (first_name, last_name, dtype) values (?, ?, 'Driver')
+2020-06-18 23:33:48.582 [DEBUG] [main] [org.hibernate.id.IdentifierGeneratorHelper:78] Natively generated identity: 1
+2020-06-18 23:33:48.582 [DEBUG] [main] [org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl:106] HHH000387: ResultSet's statement was not registered
+2020-06-18 23:33:48.590 [DEBUG] [main] [org.hibernate.engine.transaction.internal.TransactionImpl:98] committing
+2020-06-18 23:33:48.590 [DEBUG] [main] [org.hibernate.event.internal.AbstractFlushingEventListener:139] Processing flush-time cascades
+2020-06-18 23:33:48.590 [DEBUG] [main] [org.hibernate.event.internal.AbstractFlushingEventListener:192] Dirty checking collections
+2020-06-18 23:33:48.598 [DEBUG] [main] [org.hibernate.engine.internal.Collections:196] Collection found: [com.example.codiii.model.Driver.categories#1], was: [<unreferenced>] (initialized)
+2020-06-18 23:33:48.598 [DEBUG] [main] [org.hibernate.event.internal.AbstractFlushingEventListener:113] Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2020-06-18 23:33:48.598 [DEBUG] [main] [org.hibernate.event.internal.AbstractFlushingEventListener:120] Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+2020-06-18 23:33:48.598 [DEBUG] [main] [org.hibernate.internal.util.EntityPrinter:110] Listing entities:
+2020-06-18 23:33:48.598 [DEBUG] [main] [org.hibernate.internal.util.EntityPrinter:117] com.example.codiii.model.Driver{firstName=null, lastName=Kowalski, id=1, categories=[]}
+2020-06-18 23:33:48.659 [INFO] [SpringContextShutdownHook] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-18 23:33:48.659 [DEBUG] [SpringContextShutdownHook] [org.hibernate.internal.SessionFactoryImpl:771] HHH000031: Closing
+2020-06-18 23:33:48.659 [DEBUG] [SpringContextShutdownHook] [org.hibernate.type.spi.TypeConfiguration$Scope:350] Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@1e121050] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@71a0a226]
+2020-06-18 23:33:48.667 [DEBUG] [SpringContextShutdownHook] [org.hibernate.service.internal.AbstractServiceRegistryImpl:419] Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2020-06-18 23:33:48.667 [DEBUG] [SpringContextShutdownHook] [org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl:295] Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2020-06-18 23:33:48.667 [INFO] [SpringContextShutdownHook] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-18 23:33:48.667 [INFO] [SpringContextShutdownHook] [com.zaxxer.hikari.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2020-06-18 23:33:48.683 [INFO] [SpringContextShutdownHook] [com.zaxxer.hikari.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2020-06-18 23:43:28.785 [INFO] [http-nio-8093-exec-5] [com.example.codiii.controllers.DriverController:30] This is an info message
+2020-06-18 23:43:28.785 [WARN] [http-nio-8093-exec-5] [com.example.codiii.controllers.DriverController:31] This is a warn message
+2020-06-18 23:43:28.785 [ERROR] [http-nio-8093-exec-5] [com.example.codiii.controllers.DriverController:32] This is an error message
+2020-06-18 23:43:28.785 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:43:28.785 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.transaction.internal.TransactionImpl:81] begin
+2020-06-18 23:43:28.785 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.query.criteria.internal.CriteriaQueryImpl:303] Rendered criteria query -> select generatedAlias0 from Driver as generatedAlias0
+2020-06-18 23:43:28.793 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.SQL:128] select driver0_.id as id2_1_, driver0_.first_name as first_na3_1_, driver0_.last_name as last_nam4_1_ from worker driver0_ where driver0_.dtype='Driver'
+2020-06-18 23:43:28.793 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.loader.Loader:384] Result set row: 0
+2020-06-18 23:43:28.801 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.loader.Loader:1571] Result row: EntityKey[com.example.codiii.model.Driver#1]
+2020-06-18 23:43:28.803 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.internal.TwoPhaseLoad:181] Resolving attributes for [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:28.811 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `firstName` : value = null
+2020-06-18 23:43:28.811 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:28.811 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `lastName` : value = Kowalski
+2020-06-18 23:43:28.811 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:28.811 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `categories` : value = NOT NULL COLLECTION
+2020-06-18 23:43:28.811 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`categories`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:28.819 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.internal.TwoPhaseLoad:352] Done materializing entity [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:28.827 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.transaction.internal.TransactionImpl:98] committing
+2020-06-18 23:43:28.843 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:73] Loading collection: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:28.843 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.SQL:128] select categories0_.driver_id as driver_i3_0_0_, categories0_.id as id1_0_0_, categories0_.id as id1_0_1_, categories0_.driver_id as driver_i3_0_1_, categories0_.text as text2_0_1_ from categories categories0_ where categories0_.driver_id=?
+2020-06-18 23:43:28.851 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl:167] Preparing collection initializer : [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:28.851 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections were found in result set for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:28.851 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.loading.internal.CollectionLoadContext:303] Collection fully initialized: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:28.851 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections initialized for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:28.851 [DEBUG] [http-nio-8093-exec-5] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:105] Done loading collection
+2020-06-18 23:43:41.246 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:43:41.246 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.transaction.internal.TransactionImpl:81] begin
+2020-06-18 23:43:41.254 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.query.criteria.internal.CriteriaQueryImpl:303] Rendered criteria query -> select generatedAlias0 from Category as generatedAlias0 left join generatedAlias0.driver as generatedAlias1 where generatedAlias1.id=:param0
+2020-06-18 23:43:41.254 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:292] parse() - HQL: select generatedAlias0 from com.example.codiii.model.Category as generatedAlias0 left join generatedAlias0.driver as generatedAlias1 where generatedAlias1.id=:param0
+2020-06-18 23:43:41.254 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.SQL:128] select driver0_.id as id2_1_0_, driver0_.first_name as first_na3_1_0_, driver0_.last_name as last_nam4_1_0_ from worker driver0_ where driver0_.id=? and driver0_.dtype='Driver'
+2020-06-18 23:43:41.254 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.ErrorTracker:97] throwQueryException() : no errors
+2020-06-18 23:43:41.254 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:313] --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  +-[RANGE] Node: 'RANGE'
+    |  |  |  +-[DOT] Node: '.'
+    |  |  |  |  +-[DOT] Node: '.'
+    |  |  |  |  |  +-[DOT] Node: '.'
+    |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |  |  |  |  |  |  +-[IDENT] Node: 'com'
+    |  |  |  |  |  |  |  \-[IDENT] Node: 'example'
+    |  |  |  |  |  |  \-[IDENT] Node: 'codiii'
+    |  |  |  |  |  \-[IDENT] Node: 'model'
+    |  |  |  |  \-[IDENT] Node: 'Category'
+    |  |  |  \-[ALIAS] Node: 'generatedAlias0'
+    |  |  \-[JOIN] Node: 'join'
+    |  |     +-[LEFT] Node: 'left'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[IDENT] Node: 'generatedAlias0'
+    |  |     |  \-[IDENT] Node: 'driver'
+    |  |     \-[ALIAS] Node: 'generatedAlias1'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias1'
+          |  \-[IDENT] Node: 'id'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+2020-06-18 23:43:41.254 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.antlr.HqlSqlBaseWalker:124] select << begin [level=1, statement=select]
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.tree.FromElement:153] FromClause{level=1} : com.example.codiii.model.Category (generatedAlias0) -> category0_
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.tree.FromReferenceNode:60] Resolved : generatedAlias0 -> category0_.id
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl:131] On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.internal.TwoPhaseLoad:181] Resolving attributes for [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `firstName` : value = null
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `lastName` : value = Kowalski
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `categories` : value = NOT NULL COLLECTION
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`categories`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.internal.TwoPhaseLoad:352] Done materializing entity [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.tree.DotNode:694] getDataType() : driver -> org.hibernate.type.ManyToOneType(com.example.codiii.model.Driver)
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader:245] Done entity load : com.example.codiii.model.Driver#1
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.transaction.internal.TransactionImpl:98] committing
+2020-06-18 23:43:41.262 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.tree.DotNode:439] dereferenceEntityJoin() : generating join for driver in com.example.codiii.model.Category (generatedAlias1) parent = [ {null} ]
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.tree.FromElement:153] FromClause{level=1} : com.example.codiii.model.Driver (generatedAlias1) -> driver1_
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.tree.FromClause:287] addJoinByPathMap() : generatedAlias0.driver -> FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias1,role=null,tableName=worker,tableAlias=driver1_,origin=categories category0_,columns={category0_.driver_id,className=com.example.codiii.model.Driver}}
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.tree.FromReferenceNode:60] Resolved : generatedAlias0.driver -> category0_.driver_id
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:73] Loading collection: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.HqlSqlWalker:442] createFromJoinElement() : -- join tree --
+ \-[JOIN_FRAGMENT] FromElement: 'worker driver1_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias1,role=com.example.codiii.model.Category.driver,tableName=worker,tableAlias=driver1_,origin=categories category0_,columns={category0_.driver_id,className=com.example.codiii.model.Driver}}
+
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.SQL:128] select categories0_.driver_id as driver_i3_0_0_, categories0_.id as id1_0_0_, categories0_.id as id1_0_1_, categories0_.driver_id as driver_i3_0_1_, categories0_.text as text2_0_1_ from categories categories0_ where categories0_.driver_id=?
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.tree.FromReferenceNode:60] Resolved : generatedAlias0 -> category0_.id
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl:167] Preparing collection initializer : [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections were found in result set for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.tree.FromReferenceNode:60] Resolved : generatedAlias1 -> driver1_.id
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.loading.internal.CollectionLoadContext:303] Collection fully initialized: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections initialized for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.tree.DotNode:694] getDataType() : id -> org.hibernate.type.LongType@240b5c13
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-6] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:105] Done loading collection
+2020-06-18 23:43:41.270 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.tree.FromReferenceNode:60] Resolved : generatedAlias1.id -> driver1_.id
+2020-06-18 23:43:41.278 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.antlr.HqlSqlBaseWalker:128] select : finishing up [level=1, statement=select]
+2020-06-18 23:43:41.278 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.HqlSqlWalker:760] processQuery() :  ( SELECT ( {select clause} category0_.id ) ( FromClause{level=1} ( categories category0_ worker driver1_ ) ) ( where ( = ( driver1_.id driver1_.id id ) ? ) ) )
+2020-06-18 23:43:41.278 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.util.JoinProcessor:129] Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Category): [categories]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(com.example.codiii.model.Category)
+    |  | originalText: generatedAlias0
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    |     \-FromElement
+    \-SqlNode
+       \-BinaryLogicOperatorNode
+          +-DotNode
+          | persister: SingleTableEntityPersister(com.example.codiii.model.Driver)
+          | path: generatedAlias1.id
+          |  +-IdentNode
+          |  | persister: SingleTableEntityPersister(com.example.codiii.model.Driver)
+          |  | originalText: generatedAlias1
+          |  \-IdentNode
+          |    persister: null
+          |    originalText: id
+          \-ParameterNode
+
+2020-06-18 23:43:41.278 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.util.JoinProcessor:296] Using FROM fragment [categories category0_]
+2020-06-18 23:43:41.278 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.util.JoinProcessor:296] Using FROM fragment [left outer join worker driver1_ on category0_.driver_id=driver1_.id]
+2020-06-18 23:43:41.278 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.antlr.HqlSqlBaseWalker:132] select >> end [level=1, statement=select]
+2020-06-18 23:43:41.278 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:279] --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (categories,worker)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'category0_.id as id1_0_' {alias=generatedAlias0, className=com.example.codiii.model.Category, tableAlias=category0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'category0_.driver_id as driver_i3_0_, category0_.text as text2_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=2, fromElements=2, fromElementByClassAlias=[generatedAlias0, generatedAlias1], fromElementByTableAlias=[driver1_, category0_], fromElementsByPath=[generatedAlias0.driver], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'categories category0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=categories,tableAlias=category0_,origin=null,columns={,className=com.example.codiii.model.Category}}
+    |     \-[JOIN_FRAGMENT] FromElement: 'left outer join worker driver1_ on category0_.driver_id=driver1_.id' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias1,role=com.example.codiii.model.Category.driver,tableName=worker,tableAlias=driver1_,origin=categories category0_,columns={category0_.driver_id,className=com.example.codiii.model.Driver}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'driver1_.id' {propertyName=id,dereferenceType=PRIMITIVE,getPropertyPath=id,path=generatedAlias1.id,tableAlias=driver1_,className=com.example.codiii.model.Driver,classAlias=generatedAlias1}
+          |  +-[ALIAS_REF] IdentNode: 'driver1_.id' {alias=generatedAlias1, className=com.example.codiii.model.Driver, tableAlias=driver1_}
+          |  \-[IDENT] IdentNode: 'id' {originalText=id}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.LongType@240b5c13}
+
+2020-06-18 23:43:41.278 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.ErrorTracker:97] throwQueryException() : no errors
+2020-06-18 23:43:41.278 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:258] HQL: select generatedAlias0 from com.example.codiii.model.Category as generatedAlias0 left join generatedAlias0.driver as generatedAlias1 where generatedAlias1.id=:param0
+2020-06-18 23:43:41.278 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.QueryTranslatorImpl:259] SQL: select category0_.id as id1_0_, category0_.driver_id as driver_i3_0_, category0_.text as text2_0_ from categories category0_ left outer join worker driver1_ on category0_.driver_id=driver1_.id where driver1_.id=?
+2020-06-18 23:43:41.286 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.hql.internal.ast.ErrorTracker:97] throwQueryException() : no errors
+2020-06-18 23:43:41.286 [DEBUG] [http-nio-8093-exec-7] [org.hibernate.SQL:128] select category0_.id as id1_0_, category0_.driver_id as driver_i3_0_, category0_.text as text2_0_ from categories category0_ left outer join worker driver1_ on category0_.driver_id=driver1_.id where driver1_.id=?
+2020-06-18 23:43:44.553 [INFO] [http-nio-8093-exec-8] [com.example.codiii.controllers.DriverController:30] This is an info message
+2020-06-18 23:43:44.553 [WARN] [http-nio-8093-exec-8] [com.example.codiii.controllers.DriverController:31] This is a warn message
+2020-06-18 23:43:44.553 [ERROR] [http-nio-8093-exec-8] [com.example.codiii.controllers.DriverController:32] This is an error message
+2020-06-18 23:43:44.553 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:43:44.553 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.transaction.internal.TransactionImpl:81] begin
+2020-06-18 23:43:44.553 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.query.criteria.internal.CriteriaQueryImpl:303] Rendered criteria query -> select generatedAlias0 from Driver as generatedAlias0
+2020-06-18 23:43:44.561 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.SQL:128] select driver0_.id as id2_1_, driver0_.first_name as first_na3_1_, driver0_.last_name as last_nam4_1_ from worker driver0_ where driver0_.dtype='Driver'
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.loader.Loader:384] Result set row: 0
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.loader.Loader:1571] Result row: EntityKey[com.example.codiii.model.Driver#1]
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.internal.TwoPhaseLoad:181] Resolving attributes for [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `firstName` : value = null
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `lastName` : value = Kowalski
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `categories` : value = NOT NULL COLLECTION
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`categories`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.internal.TwoPhaseLoad:352] Done materializing entity [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.transaction.internal.TransactionImpl:98] committing
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:73] Loading collection: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:44.562 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.SQL:128] select categories0_.driver_id as driver_i3_0_0_, categories0_.id as id1_0_0_, categories0_.id as id1_0_1_, categories0_.driver_id as driver_i3_0_1_, categories0_.text as text2_0_1_ from categories categories0_ where categories0_.driver_id=?
+2020-06-18 23:43:44.570 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl:167] Preparing collection initializer : [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:44.570 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections were found in result set for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:44.570 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.loading.internal.CollectionLoadContext:303] Collection fully initialized: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:44.570 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections initialized for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:44.570 [DEBUG] [http-nio-8093-exec-8] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:105] Done loading collection
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.transaction.internal.TransactionImpl:81] begin
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.SQL:128] select driver0_.id as id2_1_0_, driver0_.first_name as first_na3_1_0_, driver0_.last_name as last_nam4_1_0_ from worker driver0_ where driver0_.id=? and driver0_.dtype='Driver'
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl:131] On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.internal.TwoPhaseLoad:181] Resolving attributes for [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `firstName` : value = null
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `lastName` : value = Kowalski
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `categories` : value = NOT NULL COLLECTION
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`categories`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.internal.TwoPhaseLoad:352] Done materializing entity [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader:245] Done entity load : com.example.codiii.model.Driver#1
+2020-06-18 23:43:46.167 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.transaction.internal.TransactionImpl:98] committing
+2020-06-18 23:43:46.176 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:73] Loading collection: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:46.176 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.SQL:128] select categories0_.driver_id as driver_i3_0_0_, categories0_.id as id1_0_0_, categories0_.id as id1_0_1_, categories0_.driver_id as driver_i3_0_1_, categories0_.text as text2_0_1_ from categories categories0_ where categories0_.driver_id=?
+2020-06-18 23:43:46.177 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl:167] Preparing collection initializer : [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:46.177 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections were found in result set for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:46.177 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.loading.internal.CollectionLoadContext:303] Collection fully initialized: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:46.177 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections initialized for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:46.178 [DEBUG] [http-nio-8093-exec-9] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:105] Done loading collection
+2020-06-18 23:43:50.893 [INFO] [http-nio-8093-exec-2] [com.example.codiii.controllers.DriverController:30] This is an info message
+2020-06-18 23:43:50.893 [WARN] [http-nio-8093-exec-2] [com.example.codiii.controllers.DriverController:31] This is a warn message
+2020-06-18 23:43:50.893 [ERROR] [http-nio-8093-exec-2] [com.example.codiii.controllers.DriverController:32] This is an error message
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.transaction.internal.TransactionImpl:81] begin
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.query.criteria.internal.CriteriaQueryImpl:303] Rendered criteria query -> select generatedAlias0 from Driver as generatedAlias0
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.SQL:128] select driver0_.id as id2_1_, driver0_.first_name as first_na3_1_, driver0_.last_name as last_nam4_1_ from worker driver0_ where driver0_.dtype='Driver'
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.loader.Loader:384] Result set row: 0
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.loader.Loader:1571] Result row: EntityKey[com.example.codiii.model.Driver#1]
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.internal.TwoPhaseLoad:181] Resolving attributes for [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `firstName` : value = null
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `lastName` : value = Kowalski
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `categories` : value = NOT NULL COLLECTION
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`categories`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.internal.TwoPhaseLoad:352] Done materializing entity [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:50.901 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.transaction.internal.TransactionImpl:98] committing
+2020-06-18 23:43:50.909 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:73] Loading collection: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:50.909 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.SQL:128] select categories0_.driver_id as driver_i3_0_0_, categories0_.id as id1_0_0_, categories0_.id as id1_0_1_, categories0_.driver_id as driver_i3_0_1_, categories0_.text as text2_0_1_ from categories categories0_ where categories0_.driver_id=?
+2020-06-18 23:43:50.909 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl:167] Preparing collection initializer : [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:50.909 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections were found in result set for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:50.909 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.loading.internal.CollectionLoadContext:303] Collection fully initialized: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:50.909 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections initialized for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:50.909 [DEBUG] [http-nio-8093-exec-2] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:105] Done loading collection
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.transaction.internal.TransactionImpl:81] begin
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.SQL:128] select driver0_.id as id2_1_0_, driver0_.first_name as first_na3_1_0_, driver0_.last_name as last_nam4_1_0_ from worker driver0_ where driver0_.id=? and driver0_.dtype='Driver'
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl:131] On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.internal.TwoPhaseLoad:181] Resolving attributes for [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `firstName` : value = null
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `lastName` : value = Kowalski
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `categories` : value = NOT NULL COLLECTION
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`categories`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.internal.TwoPhaseLoad:352] Done materializing entity [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader:245] Done entity load : com.example.codiii.model.Driver#1
+2020-06-18 23:43:50.941 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.transaction.internal.TransactionImpl:98] committing
+2020-06-18 23:43:50.949 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.transaction.internal.TransactionImpl:81] begin
+2020-06-18 23:43:50.950 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.event.internal.EntityCopyObserverFactoryInitiator:38] Configured EntityCopyObserver strategy: disallow
+2020-06-18 23:43:50.958 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.transaction.internal.TransactionImpl:98] committing
+2020-06-18 23:43:50.958 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.event.internal.AbstractFlushingEventListener:139] Processing flush-time cascades
+2020-06-18 23:43:50.958 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.event.internal.AbstractFlushingEventListener:192] Dirty checking collections
+2020-06-18 23:43:50.966 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.internal.Collections:213] Collection found: [com.example.codiii.model.Driver.categories#1], was: [com.example.codiii.model.Driver.categories#1] (uninitialized)
+2020-06-18 23:43:50.966 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.event.internal.AbstractFlushingEventListener:113] Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+2020-06-18 23:43:50.966 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.event.internal.AbstractFlushingEventListener:120] Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+2020-06-18 23:43:50.966 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.internal.util.EntityPrinter:110] Listing entities:
+2020-06-18 23:43:50.966 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.internal.util.EntityPrinter:117] com.example.codiii.model.Driver{firstName=Adam, lastName=Kowalski, id=1, categories=<uninitialized>}
+2020-06-18 23:43:50.974 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.SQL:128] update worker set first_name=?, last_name=? where id=?
+2020-06-18 23:43:50.982 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:73] Loading collection: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:50.982 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.SQL:128] select categories0_.driver_id as driver_i3_0_0_, categories0_.id as id1_0_0_, categories0_.id as id1_0_1_, categories0_.driver_id as driver_i3_0_1_, categories0_.text as text2_0_1_ from categories categories0_ where categories0_.driver_id=?
+2020-06-18 23:43:50.982 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl:167] Preparing collection initializer : [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:50.982 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections were found in result set for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:50.982 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.loading.internal.CollectionLoadContext:303] Collection fully initialized: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:50.982 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections initialized for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:50.982 [DEBUG] [http-nio-8093-exec-1] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:105] Done loading collection
+2020-06-18 23:43:53.569 [INFO] [http-nio-8093-exec-3] [com.example.codiii.controllers.DriverController:30] This is an info message
+2020-06-18 23:43:53.577 [WARN] [http-nio-8093-exec-3] [com.example.codiii.controllers.DriverController:31] This is a warn message
+2020-06-18 23:43:53.577 [ERROR] [http-nio-8093-exec-3] [com.example.codiii.controllers.DriverController:32] This is an error message
+2020-06-18 23:43:53.577 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.transaction.internal.TransactionImpl:53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-06-18 23:43:53.577 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.transaction.internal.TransactionImpl:81] begin
+2020-06-18 23:43:53.577 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.query.criteria.internal.CriteriaQueryImpl:303] Rendered criteria query -> select generatedAlias0 from Driver as generatedAlias0
+2020-06-18 23:43:53.585 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.SQL:128] select driver0_.id as id2_1_, driver0_.first_name as first_na3_1_, driver0_.last_name as last_nam4_1_ from worker driver0_ where driver0_.dtype='Driver'
+2020-06-18 23:43:53.585 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.loader.Loader:384] Result set row: 0
+2020-06-18 23:43:53.585 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.loader.Loader:1571] Result row: EntityKey[com.example.codiii.model.Driver#1]
+2020-06-18 23:43:53.585 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.internal.TwoPhaseLoad:181] Resolving attributes for [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:53.585 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `firstName` : value = Adam
+2020-06-18 23:43:53.585 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`firstName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:53.585 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `lastName` : value = Kowalski
+2020-06-18 23:43:53.593 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`lastName`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:53.593 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.internal.TwoPhaseLoad:196] Processing attribute `categories` : value = NOT NULL COLLECTION
+2020-06-18 23:43:53.593 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.internal.TwoPhaseLoad:227] Attribute (`categories`)  - enhanced for lazy-loading? - false
+2020-06-18 23:43:53.593 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.internal.TwoPhaseLoad:352] Done materializing entity [com.example.codiii.model.Driver#1]
+2020-06-18 23:43:53.593 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.transaction.internal.TransactionImpl:98] committing
+2020-06-18 23:43:53.593 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:73] Loading collection: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:53.593 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.SQL:128] select categories0_.driver_id as driver_i3_0_0_, categories0_.id as id1_0_0_, categories0_.id as id1_0_1_, categories0_.driver_id as driver_i3_0_1_, categories0_.text as text2_0_1_ from categories categories0_ where categories0_.driver_id=?
+2020-06-18 23:43:53.593 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl:167] Preparing collection initializer : [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:53.601 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections were found in result set for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:53.601 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.loading.internal.CollectionLoadContext:303] Collection fully initialized: [com.example.codiii.model.Driver.categories#1]
+2020-06-18 23:43:53.601 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.engine.loading.internal.CollectionLoadContext:394] 1 collections initialized for role: com.example.codiii.model.Driver.categories
+2020-06-18 23:43:53.601 [DEBUG] [http-nio-8093-exec-3] [org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer:105] Done loading collection
